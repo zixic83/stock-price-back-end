@@ -19,7 +19,7 @@ const deleteStock = async (req, res) => {
     const { code } = req.body;
      const result = await stockList.findOneAndDelete({ code });
      if (!result) {
-         res.status(404).send(`No stock with stock code : ${code}`)
+         return res.status(404).send(`No stock with stock code : ${code}`)
      }
      res.status(200).json({ msg:`Stock with code ${code} sucessfully deleted` });
 }
