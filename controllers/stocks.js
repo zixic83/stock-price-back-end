@@ -2,7 +2,7 @@ const stockList = require('../models/stockList');
 
 const getAllStocks = async (req, res) => {
     try {
-        const stocks = await stockList.find({})
+        const stocks = await stockList.find({}, { _id: 0, __v: 0 })
         res.status(200).json({stocks})
     } catch (error) {
         res.status(500).json({msg:error})

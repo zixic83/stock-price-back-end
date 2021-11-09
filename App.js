@@ -5,6 +5,7 @@ const notFoundMiddleware = require('./middleware/not-found');
 const errorMiddleware = require('./middleware/error-handler');
 const connectDB = require('./db/connectDB');
 const homeRouter = require('./routes/stocks');
+const portfolioRouter = require('./routes/portfolio')
 
 
 const app = express();
@@ -15,6 +16,7 @@ app.get("/", (req, res) => {
   res.send('Welcome to the stock API');
 });
 app.use("/api/v1/codeList", homeRouter);
+app.use("/api/v1/portfolio", portfolioRouter);
 
 // error handling middleware
 app.use(notFoundMiddleware)

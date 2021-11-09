@@ -1,0 +1,27 @@
+[
+  {
+    "code": "A2M",
+    "avgPrice": 11.62,
+    "units": 353
+  },
+  {
+    "code": "MP1",
+    "avgPrice": 12.6091,
+    "units": 353
+  },
+  {
+    "code": "QAN",
+    "avgPrice": 2.6275,
+    "units": 1827
+  },
+  {
+    "code": "RIO",
+    "avgPrice": 98.19,
+    "units": 49
+  },
+  {
+    "code": "VAS",
+    "avgPrice": 68.9193,
+    "units": 363
+  }
+]
